@@ -105,30 +105,29 @@
       {Party Revolution FZ-LLC}{Jan 2026 -- Present}
       {Full-Stack Developer (Contract)}{Remote}
       \resumeItemListStart
-        \resumeItem{Engineered a real-time streaming state-machine that enables seamless switching from public broadcasts to private sessions via WebSocket events and Redis state synchronization.}
-        \resumeItem{Developed a complex session lifecycle manager to automate transitions, enforcing performer availability and payment timeouts without manual intervention.}
-        \resumeItem{Implemented a robust stream listener service to manage multi-stage reminders and reconnection grace periods, ensuring session continuity during network fluctuations.}
-        \resumeItem{Secured private streaming workflows with request-based negotiation logic, allowing the frontend to pivot between public and gated rooms without unauthorized access leaks.}
+        \resumeItem{Built the streaming platform with \textbf{NestJS} and \textbf{Next.js}, using \textbf{MongoDB} for persistence, \textbf{Redis} for low-latency cache and session state, and \textbf{BullMQ} for background side-effect jobs.}
+        \resumeItem{Engineered a streaming state machine that enables seamless switching from public broadcasts to private sessions via \textbf{Socket.IO} events, Redis state synchronization, and \textbf{Agora} channels for secure private streams.}
+        \resumeItem{Implemented a session lifecycle manager to automate transitions, enforce performer availability, and process payment timeouts without manual intervention.}
+        \resumeItem{Built a stream listener service to handle reminders, reconnection grace periods, and other asynchronous tasks outside the request cycle.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Kyaw Kyar Car Showroom}{Dec 2025 -- Mar 2026}
+      {Car Showroom Website}{Dec 2025 -- Mar 2026}
       {Full-Stack Developer (Freelance)}{Mandalay, Myanmar}
       \resumeItemListStart
-        \resumeItem{Designed and deployed a production-grade car showroom platform, managing the full development lifecycle from database architecture to server deployment.}
-        \resumeItem{Developed a custom \textbf{Golang CLI} tool to automate batch vehicle uploads, utilizing concurrency patterns to handle high-volume data and image processing efficiently.}
-        \resumeItem{Engineered a scalable asset management system using \textbf{DigitalOcean Spaces} for media storage and hosted the application on \textbf{DigitalOcean Droplets} with \textbf{Nginx}.}
-        \resumeItem{Configured a secure production environment with \textbf{Cloudflare SSL} and optimized SEO performance, resulting in a 40\% improvement in page load speeds for vehicle listings.}
+        \resumeItem{Built a car showroom website with \textbf{React} on the frontend, \textbf{Express} on the backend, and \textbf{PostgreSQL} for persistent data storage.}
+        \resumeItem{Hosted the application on \textbf{DigitalOcean} and used \textbf{Cloudflare CDN} to reduce latency and improve global delivery performance.}
+        \resumeItem{Implemented image caching for less frequently changed assets, improving image load speed by 25\% and reducing repeated network fetches.}
       \resumeItemListEnd
       
     \resumeSubheading
       {VendorSage}{Oct 2025 -- Nov 2025}
       {Associate Full-Stack Developer (Contract)}{Remote}
       \resumeItemListStart
-        \resumeItem{Developed a centralized microservice to manage multi-channel notifications (Slack, Email) for internal services via a \textbf{gRPC}-based communication layer.}
+        \resumeItem{Developed the notification service in \textbf{Go} with \textbf{PostgreSQL}, \textbf{gRPC}, \textbf{Next.js}, \textbf{Kubernetes}, and \textbf{Docker} to support internal alert delivery.}
+        \resumeItem{Built a centralized microservice to manage multi-channel notifications (Slack, Email) for internal services through a \textbf{gRPC}-based communication layer.}
         \resumeItem{Implemented a flexible delivery engine supporting both real-time alerts and scheduled digests with custom routing logic.}
-        \resumeItem{Built a robust reliability layer featuring automated retry workflows and task scheduling to ensure consistent message delivery.}
-        \resumeItem{Optimized internal service communication by using \textbf{Protobuf} and \textbf{gRPC} to reduce latency and ensure type-safe data transfer.}
+        \resumeItem{Built a reliability layer featuring automated retry workflows and task scheduling to ensure consistent message delivery.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -148,8 +147,8 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Go (Golang), TypeScript, JavaScript, SQL (PostgreSQL), C, HTML/CSS} \\
-     \textbf{Technologies/Frameworks}{: React, Next.js, NestJS, Node.js, React Native, gRPC, Socket.IO} \\
-     \textbf{Tools/Infrastructure}{: Docker, Nginx, Redis, AWS, DigitalOcean, Git}
+     \textbf{Technologies/Frameworks}{: React, Next.js, NestJS, Node.js, React Native, gRPC, Socket.IO, BullMQ} \\
+     \textbf{Databases/Infrastructure}{: PostgreSQL, MongoDB, Redis, Docker, Kubernetes, Nginx, AWS, DigitalOcean, Git}
     }}
  \end{itemize}
  \vspace{-16pt}
